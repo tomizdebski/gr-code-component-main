@@ -5,24 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    
+    .container { 
+      font-family: 'Outfit', sans-serif;
+      width: 330px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 15px; 
+      padding: 20px;
+      border-style: none;
+      background: hsl(212, 45%, 89%);
+      
+    }
+  
+
+  @media (min-width: 1440px) {
+    .container { 
+      width: 1440px;
+    }
+  }
+
+
+
+    .container__flex{
+      width:300px;
+      text-align: center;
+      background-color: white;
+      border-radius: 5%;
+      padding: 20px
+
+    }
+    .container__img {
+
+      border-radius: 5%;
+      display: block;
+      width: 300px;
+
+    }
+    .container__p--first {
+
+      font-weight: 700;
+      letter-spacing: 2px;
+      
+    
+    }
+    .container__p--first {
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+
+    <div class="container__flex">
+      <img class="container__img" src="/images/image-qr-code.png" alt="qr">
+    <p class="container__p--first">Improve your front-end skills by bildings projects</p>
+    <p class="container__p--last">Scan the qrcode to visit frontend and take your coding skills to next level</p>
+    </div>
+    
   </div>
 </body>
 </html>
