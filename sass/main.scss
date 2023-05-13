@@ -1,0 +1,49 @@
+$main-color: hsl(212, 45%, 89%);
+$default-font: arial, sans-serif;
+
+    .container {
+      font-family: $default-font;
+      width: 330px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 15px; 
+      padding: 20px;
+      border-style: none;
+      background:$main-color;
+      &__flex{
+        width:300px;
+        text-align: center;
+        background-color: white;
+        border-radius: 5%;
+        padding: 20px
+      }
+      &__flex{
+        width:300px;
+        text-align: center;
+        background-color: white;
+        border-radius: 5%;
+        padding: 20px
+      }
+      &__img {
+        border-radius: 5%;
+        display: block;
+        width: 300px;
+      }
+      &__p--first {
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      &__p--first {
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+    }
+  
+
+  @media (min-width: 1440px) {
+    .container { 
+      width: 1440px;
+    }
+  }
+
